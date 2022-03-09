@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "trigger-all-automation-store-tests": "npx cypress run --spec cypress/integration/automation-test-store/*",
+    "trigger-all-webdriveruni-tests": "npx cypress run --spec cypress/integration/webdriveruni/*",
+    "trigger-all-webdriveruni-tests-dashboard": "npx cypress run --spec cypress/integration/webdriveruni/* --record --key 56dfea32-e78e-4c83-851e-2fcc0872af6f --parallel --browser chrome --headed",
     "cypress-multi-browser": "npm run trigger-all-automation-store-tests -- --browser electron --headed & npm run trigger-all-automation-store-tests -- --browser edge --headed",
     "AllTests-autostore-dashboard": "npx cypress run --spec cypress/integration/automation-test-store/* --record --key 56dfea32-e78e-4c83-851e-2fcc0872af6f --parallel --browser chrome --headed"
   },
