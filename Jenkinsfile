@@ -14,7 +14,7 @@ pipeline {
                         git url: 'https://github.com/Andrey-Pavlov-A/cypress-auto-test.git'
                         bat 'npm install'
                         bat 'npm update'
-                        bat 'npm run AllTests-autostore-dashboard'
+                        bat 'npm run %Script%'
                     }
                 }
 
@@ -26,7 +26,7 @@ pipeline {
                         git url: 'https://github.com/Andrey-Pavlov-A/cypress-auto-test.git'
                         bat 'npm install'
                         bat 'npm update'
-                        bat 'npm run AllTests-autostore-dashboard'
+                        bat 'npm run %Script%'
                     }
                 }
             }
