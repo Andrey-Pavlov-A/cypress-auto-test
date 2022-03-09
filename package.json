@@ -1,0 +1,20 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "trigger-all-automation-store-tests": "npx cypress run --spec cypress/integration/automation-test-store/*",
+    "cypress-multi-browser": "npm run trigger-all-automation-store-tests -- --browser electron --headed & npm run trigger-all-automation-store-tests -- --browser edge --headed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.4.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha": "^9.2.1",
+    "mocha-junit-reporter": "^2.0.2"
+  }
+}

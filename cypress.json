@@ -1,0 +1,7 @@
+{
+  "baseUrl": "https://webdriveruniversity.com",
+  "env": {
+    "webdriveruni_homepage": "https://webdriveruniversity.com"
+  },
+  "projectId": "omvtn6"
+}
