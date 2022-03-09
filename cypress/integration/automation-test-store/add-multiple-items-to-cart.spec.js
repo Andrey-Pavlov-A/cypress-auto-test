@@ -5,8 +5,8 @@ describe("add multiple items to the cart", () => {
     const autoStore_HomePage_PO = new AutoStore_HomePage_PO()
     const autoStore_HairCare_PO = new AutoStore_HairCare_PO()
 
-    before(()=>{
-        cy.fixture("product").then((data)=>{
+    before(() => {
+        cy.fixture("product").then((data) => {
             globalThis.data = data
         })
     })
